@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Menu Recommendations</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Personalized Menu Recommendations</h1>
+        <p>Create your food profile and get tailored restaurant menu suggestions.</p>
+    </header>
+
+    <!-- Profile Creation Section -->
+    <section>
+        <form id="profileForm">
+            <h2>Create Your Food Profile</h2>
+            
+            <label for="foodPreferences">Food Preferences:</label>
+            <input type="text" id="foodPreferences" name="foodPreferences" placeholder="e.g., Vegan, Seafood">
+
+            <label for="dietaryRestrictions">Dietary Restrictions:</label>
+            <input type="text" id="dietaryRestrictions" name="dietaryRestrictions" placeholder="e.g., Gluten-free, Nut allergies">
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </section>
+
+    <!-- Menu Upload Section -->
+    <section>
+        <form id="menuUploadForm">
+            <h2>Upload a Restaurant Menu</h2>
+
+            <label for="menuFile">Menu File:</label>
+            <input type="file" id="menuFile" name="menuFile">
+
+            <button type="submit">Analyze Menu</button>
+        </form>
+    </section>
+
+    <!-- Restaurant Search Section -->
+    <section>
+        <form id="restaurantSearchForm">
+            <h2>Search Restaurant</h2>
+            <label for="restaurantName">Restaurant Name:</label>
+            <input type="text" id="restaurantName" name="restaurantName" placeholder="Enter restaurant name">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendationsSection" style="display:none;">
+        <h2>Recommended Dishes</h2>
+        <div id="recommendations">
+            <!-- Recommendations will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Personalized Menu Recommendations. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
